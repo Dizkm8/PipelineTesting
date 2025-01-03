@@ -31,7 +31,7 @@ public class WeatherForecastController : ControllerBase
     public IEnumerable<WeatherForecast> Get()
     {
         return Enumerable
-            .Range(1, 5)
+            .Range(1, 20)
             .Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
