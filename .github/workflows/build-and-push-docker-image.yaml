@@ -23,6 +23,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: "{{defaultContext}}:API"
+          context: "{{defaultContext}}"
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/pipeline-testing:latest , ${{ secrets.DOCKERHUB_USERNAME }}/pipeline-testing:${{ github.sha }}
